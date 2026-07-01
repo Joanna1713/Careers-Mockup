@@ -452,7 +452,8 @@ select:focus-visible,
 }
 
 .voices-copy h2,
-.testimonial-panel blockquote {
+.testimonial-panel blockquote,
+.principle-panel h3 {
   margin: 0;
   color: var(--ink);
 }
@@ -515,6 +516,44 @@ select:focus-visible,
   color: var(--red-dark);
   font-size: var(--small-copy);
   font-weight: 850;
+}
+
+.principle-panel {
+  display: grid;
+  gap: 1px;
+  overflow: hidden;
+  background: var(--line);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.principle-panel article {
+  display: grid;
+  grid-template-columns: 58px minmax(0, 1fr);
+  column-gap: 22px;
+  padding: 28px;
+  background: #ffffff;
+}
+
+.principle-panel span {
+  color: var(--red-dark);
+  font-family: var(--display-font);
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.principle-panel h3 {
+  font-size: 19px;
+  line-height: 1.22;
+}
+
+.principle-panel p {
+  grid-column: 2;
+  margin: 10px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.65;
 }
 
 .benefits-section,
@@ -1495,12 +1534,22 @@ select:focus-visible,
     font-size: 16px;
   }
 
-  .testimonial-panel {
+  .testimonial-panel,
+  .principle-panel article {
     padding: 24px;
   }
 
   .testimonial-panel blockquote {
     font-size: 19px;
+  }
+
+  .principle-panel article {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .principle-panel p {
+    grid-column: auto;
   }
 
   .benefit-grid {
