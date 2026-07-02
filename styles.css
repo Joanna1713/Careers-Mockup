@@ -271,7 +271,7 @@ select:focus-visible,
 .primary-link:hover {
   background: var(--red-deep);
 }
-
+.voices-placeholder
 .about-section,
 .benefits-section,
 .people-section,
@@ -1444,7 +1444,15 @@ select:focus-visible,
     display: grid;
     gap: 14px;
   }
+.voices-placeholder {
+  grid-template-columns: 1fr;
+  gap: 22px;
+  margin-top: 0;
+}
 
+.voice-preview-grid {
+  grid-template-columns: 1fr;
+}
   .filter-bar {
     grid-template-columns: 1fr;
   }
